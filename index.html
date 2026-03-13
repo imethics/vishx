@@ -536,147 +536,611 @@
             </div>
         </div>
     </section>
-
-    <section id="projects" class="py-32 bg-white relative overflow-hidden">
+<section id="projects" class="py-32 bg-[#F8FAFC] relative overflow-hidden border-y border-[#E5E7EB]">
         
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-[#F8FAFC] -skew-x-12 transform origin-top-right z-0"></div>
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.04]">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="blueprint-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                        <path d="M 0 40 L 40 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blueprint-grid)" />
+            </svg>
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <div class="mb-20 md:flex md:justify-between md:items-end" data-aos="fade-up">
                 <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0C8077] mb-6 uppercase tracking-widest shadow-sm">
-                        <i class="fa-solid fa-briefcase"></i> Proven Execution
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E7EB] text-xs font-bold text-[#0F172A] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-server text-[#0C8077]"></i> Case Studies
                     </div>
                     <h2 class="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-6">
-                        Engineered <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0C8077] to-teal-500">Solutions.</span>
+                        Architected for <span class="text-[#0C8077]">Scale.</span>
                     </h2>
                     <p class="text-lg text-[#64748B] leading-relaxed">
-                        We don't just deliver code; we deliver business outcomes. Here is how our engineering team has architected scalable platforms and AI integrations for growing companies.
+                        Real engineering solves complex business bottlenecks. Explore how we have architected secure, high-performance infrastructure across heavily regulated and data-intensive industries.
                     </p>
                 </div>
                 <div class="hidden md:block pb-2">
                     <a href="#contact" class="text-[#0C8077] font-bold hover:text-[#09665f] transition-colors flex items-center gap-2 group">
-                        Start your project <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        Discuss your architecture <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </a>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                
+                <div class="bg-white border border-[#E5E7EB] rounded-3xl p-8 lg:p-12 shadow-sm hover:shadow-xl transition-shadow duration-500 group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        
+                        <div class="order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">FinTech Sector</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">High-Volume Transaction Processing Engine</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A financial services client was experiencing severe database locking and latency issues during end-of-day reconciliation. We completely re-architected their backend, transitioning them from a monolithic structure to a decoupled microservices architecture utilizing AWS SQS and advanced PostgreSQL indexing.
+                            </p>
+                            
+                            <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-[#E5E7EB]">
+                                <div>
+                                    <p class="text-3xl font-black text-[#0F172A]">84%</p>
+                                    <p class="text-xs text-[#64748B] uppercase tracking-wide font-bold mt-1">Reduction in Latency</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-black text-[#0F172A]">Zero</p>
+                                    <p class="text-xs text-[#64748B] uppercase tracking-wide font-bold mt-1">Data Packet Loss</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Node.js</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">PostgreSQL</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">AWS SQS</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="order-1 lg:order-2 bg-[#0F172A] rounded-2xl p-6 relative overflow-hidden h-full min-h-[350px] flex items-center justify-center border border-[#1E293B]">
+                            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+                            
+                            <div class="relative z-10 w-full max-w-sm">
+                                <div class="flex justify-between items-center mb-12 relative">
+                                    <div class="w-16 h-16 rounded-xl bg-[#1E293B] border border-[#334155] flex flex-col items-center justify-center text-white z-10">
+                                        <i class="fa-solid fa-mobile-screen text-xl mb-1"></i>
+                                        <span class="text-[8px] font-mono text-[#94A3B8]">CLIENT</span>
+                                    </div>
+                                    
+                                    <div class="absolute left-16 right-16 h-0.5 bg-[#334155] top-1/2 -translate-y-1/2">
+                                        <div class="h-full bg-[#0C8077] w-1/3 animate-ping" style="animation-duration: 2s;"></div>
+                                    </div>
+
+                                    <div class="w-16 h-16 rounded-xl bg-[#0C8077]/20 border border-[#0C8077] flex flex-col items-center justify-center text-[#0C8077] z-10 shadow-[0_0_15px_rgba(12,128,119,0.3)]">
+                                        <i class="fa-solid fa-server text-xl mb-1"></i>
+                                        <span class="text-[8px] font-mono text-[#0C8077]">API GW</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center mb-12 relative">
+                                    <div class="absolute top-[-3rem] bottom-full w-0.5 bg-[#0C8077] left-1/2 -translate-x-1/2"></div>
+                                    <div class="w-48 h-12 rounded-lg bg-[#1E293B] border border-[#334155] flex items-center justify-center text-white z-10 gap-3">
+                                        <i class="fa-solid fa-layer-group text-[#0C8077]"></i>
+                                        <span class="text-[10px] font-mono tracking-widest">SQS MESSAGE QUEUE</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center relative">
+                                    <div class="absolute top-[-3rem] bottom-full w-0.5 bg-[#334155] left-1/2 -translate-x-1/2"></div>
+                                    <div class="w-16 h-16 rounded-full bg-[#1E293B] border border-[#334155] flex flex-col items-center justify-center text-white z-10">
+                                        <i class="fa-solid fa-database text-xl mb-1 text-blue-400"></i>
+                                        <span class="text-[8px] font-mono text-[#94A3B8]">RDS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white border border-[#E5E7EB] rounded-3xl p-8 lg:p-12 shadow-sm hover:shadow-xl transition-shadow duration-500 group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        
+                        <div class="bg-[#0F172A] rounded-2xl p-6 relative overflow-hidden h-full min-h-[350px] flex items-center justify-center border border-[#1E293B]">
+                            <div class="w-full max-w-sm bg-[#1E293B] rounded-xl border border-[#334155] shadow-2xl overflow-hidden">
+                                <div class="bg-[#0F172A] px-4 py-2 border-b border-[#334155] flex items-center gap-2">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                                    <span class="ml-4 text-[10px] font-mono text-[#94A3B8]">inventory_sync.json</span>
+                                </div>
+                                <div class="p-4 font-mono text-[11px] leading-relaxed overflow-hidden">
+                                    <span class="text-pink-400">const</span> <span class="text-blue-400">syncInventory</span> <span class="text-white">=</span> <span class="text-pink-400">async</span> () <span class="text-pink-400">=></span> {<br>
+                                    &nbsp;&nbsp;<span class="text-pink-400">try</span> {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-pink-400">const</span> response <span class="text-white">=</span> <span class="text-pink-400">await</span> <span class="text-blue-300">fetch</span>(<span class="text-green-300">'/api/v1/vehicles'</span>);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-pink-400">const</span> data <span class="text-white">=</span> <span class="text-pink-400">await</span> response.<span class="text-blue-300">json</span>();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-[#64748B] italic">// Response payload mapped to Elasticsearch</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-white">{</span><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-300">"status"</span><span class="text-white">:</span> <span class="text-green-300">200</span>,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-300">"nodes_synced"</span><span class="text-white">:</span> <span class="text-orange-300">1402</span>,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-300">"latency"</span><span class="text-white">:</span> <span class="text-green-300">"12ms"</span>,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-300">"data"</span><span class="text-white">:</span> [<span class="text-[#0C8077]">Array...</span>]<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-white">}</span><br>
+                                    &nbsp;&nbsp;} <span class="text-pink-400">catch</span> (err) { ... }<br>
+                                    };
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">Automotive Industry</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Distributed Inventory Management Platform</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A major automotive dealership network struggled with inventory synchronization across 14 different locations. We engineered a centralized, headless React application paired with an Elasticsearch database, allowing real-time, global search querying of thousands of vehicle units with zero layout shift.
+                            </p>
+                            
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start text-[#0F172A]">
+                                    <i class="fa-solid fa-check text-[#0C8077] mt-1.5 mr-3 text-sm"></i> 
+                                    <span><strong>Sub-50ms Search Querying:</strong> Implemented Elasticsearch for instant filtering across vast data parameters.</span>
+                                </li>
+                                <li class="flex items-start text-[#0F172A]">
+                                    <i class="fa-solid fa-check text-[#0C8077] mt-1.5 mr-3 text-sm"></i> 
+                                    <span><strong>Headless Architecture:</strong> Separated the frontend UI from the complex inventory backend for ultimate scalability.</span>
+                                </li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2 border-t border-[#E5E7EB] pt-6">
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">React</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Elasticsearch</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Python APIs</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white border border-[#E5E7EB] rounded-3xl p-8 lg:p-12 shadow-sm hover:shadow-xl transition-shadow duration-500 group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        
+                        <div class="order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">Health & Wellness</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Secure Patient Routing & Automated Triage</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A telehealth clinic network needed a system to automatically route incoming patient requests to the correct specialist based on initial symptom descriptions, all while maintaining strict data compliance protocols. We deployed a secure NLP triage model backed by a highly available AWS infrastructure.
+                            </p>
+                            
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-start text-[#0F172A]">
+                                    <i class="fa-solid fa-check text-[#0C8077] mt-1.5 mr-3 text-sm"></i> 
+                                    <span><strong>NLP Integration:</strong> Trained a custom model to accurately parse and categorize initial consultation requests.</span>
+                                </li>
+                                <li class="flex items-start text-[#0F172A]">
+                                    <i class="fa-solid fa-check text-[#0C8077] mt-1.5 mr-3 text-sm"></i> 
+                                    <span><strong>Compliance & Security:</strong> Architected within isolated Virtual Private Clouds (VPCs) with end-to-end encryption.</span>
+                                </li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2 border-t border-[#E5E7EB] pt-6">
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">AWS VPC</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">NLP Models</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">CI/CD</span>
+                            </div>
+                        </div>
+
+                        <div class="order-1 lg:order-2 bg-[#0F172A] rounded-2xl p-6 relative overflow-hidden h-full min-h-[350px] flex items-center justify-center border border-[#1E293B]">
+                            <div class="w-full max-w-sm">
+                                <h4 class="text-[#94A3B8] font-mono text-xs tracking-widest mb-6 text-center border-b border-[#334155] pb-2">DEPLOYMENT PIPELINE</h4>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-4 bg-[#1E293B] p-3 rounded-lg border border-[#334155]">
+                                        <div class="w-8 h-8 rounded bg-green-500/20 text-green-400 flex items-center justify-center"><i class="fa-solid fa-check"></i></div>
+                                        <div class="flex-grow">
+                                            <p class="text-white font-mono text-xs">Build: Containerize Application</p>
+                                            <div class="w-full bg-[#0F172A] h-1.5 mt-2 rounded-full overflow-hidden"><div class="bg-green-400 w-full h-full"></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 bg-[#1E293B] p-3 rounded-lg border border-[#334155]">
+                                        <div class="w-8 h-8 rounded bg-green-500/20 text-green-400 flex items-center justify-center"><i class="fa-solid fa-check"></i></div>
+                                        <div class="flex-grow">
+                                            <p class="text-white font-mono text-xs">Security: Penetration Scan</p>
+                                            <div class="w-full bg-[#0F172A] h-1.5 mt-2 rounded-full overflow-hidden"><div class="bg-green-400 w-full h-full"></div></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-4 bg-[#1E293B] p-3 rounded-lg border border-[#0C8077] shadow-[0_0_15px_rgba(12,128,119,0.2)]">
+                                        <div class="w-8 h-8 rounded bg-[#0C8077]/20 text-[#0C8077] flex items-center justify-center"><i class="fa-solid fa-spinner animate-spin"></i></div>
+                                        <div class="flex-grow">
+                                            <p class="text-white font-mono text-xs">Deploy: AWS Master Node</p>
+                                            <div class="w-full bg-[#0F172A] h-1.5 mt-2 rounded-full overflow-hidden"><div class="bg-[#0C8077] w-[65%] h-full relative"><div class="absolute top-0 right-0 bottom-0 w-8 bg-gradient-to-r from-transparent to-white/50 animate-pulse"></div></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 bg-[#F8FAFC] relative overflow-hidden border-y border-[#E5E7EB]">
+        
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="blueprint-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                        <path d="M 0 40 L 40 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blueprint-grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="mb-20 md:flex md:justify-between md:items-end" data-aos="fade-up">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E7EB] text-xs font-bold text-[#0F172A] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-desktop text-[#0C8077]"></i> Deployed Architecture
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-6">
+                        Architected for <span class="text-[#0C8077]">Scale.</span>
+                    </h2>
+                    <p class="text-lg text-[#64748B] leading-relaxed">
+                        Real engineering solves complex bottlenecks. Explore high-fidelity replicas of the actual interfaces and systems we have deployed for data-intensive industries.
+                    </p>
                 </div>
             </div>
 
             <div class="space-y-24">
                 
-                <div class="group" data-aos="fade-up" data-aos-delay="0">
-                    <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-                        <div class="lg:col-span-7 relative overflow-hidden rounded-3xl border border-[#E5E7EB] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] bg-[#F8FAFC] aspect-[16/10] flex items-center justify-center hover-trigger">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-[#0C8077]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            <div class="w-3/4 h-3/4 bg-white rounded-xl shadow-xl border border-[#E5E7EB] p-6 flex flex-col transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-700 ease-out">
-                                <div class="flex items-center justify-between mb-6 border-b border-[#E5E7EB] pb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary"><i class="fa-solid fa-robot"></i></div>
-                                        <div class="h-3 w-24 bg-[#E5E7EB] rounded"></div>
-                                    </div>
-                                    <div class="h-4 w-12 bg-green-100 rounded-full flex items-center justify-center"><div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div></div>
-                                </div>
-                                <div class="space-y-4 flex-grow">
-                                    <div class="flex gap-4 items-end justify-end"><div class="h-10 w-48 bg-primary/10 rounded-l-xl rounded-tr-xl border border-primary/20"></div></div>
-                                    <div class="flex gap-4 items-end"><div class="h-16 w-56 bg-[#F8FAFC] rounded-r-xl rounded-tl-xl border border-[#E5E7EB]"></div></div>
-                                    <div class="flex gap-4 items-end justify-end"><div class="h-10 w-32 bg-primary/10 rounded-l-xl rounded-tr-xl border border-primary/20"></div></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         
-                        <div class="lg:col-span-5 flex flex-col justify-center">
-                            <div class="mb-6 flex gap-2">
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">Python</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">NLP Models</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">Cloud</span>
+                        <div class="lg:col-span-5 order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">FinTech Sector</span>
                             </div>
-                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight group-hover:text-[#0C8077] transition-colors">AI Customer Support Assistant</h3>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Institutional Trading Terminal</h3>
                             <p class="text-[#64748B] text-lg leading-relaxed mb-8">
-                                We architected an intelligent, NLP-driven chatbot integrated directly into the client's core business systems. This solution completely automated tier-1 customer queries and drastically reduced support operational overhead.
+                                A financial services client required a zero-latency interface to monitor high-frequency trading data. We engineered a robust React frontend connected to an AWS SQS backend, rendering massive data arrays without a single dropped frame.
                             </p>
-                            <ul class="space-y-3 mb-8">
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Automated 70% of routine inquiries</li>
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Seamless API integration with existing CRM</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group" data-aos="fade-up" data-aos-delay="0">
-                    <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-                        <div class="lg:col-span-5 flex flex-col justify-center lg:order-1 order-2">
-                            <div class="mb-6 flex gap-2">
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">React</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">Node.js</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">PostgreSQL</span>
-                            </div>
-                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight group-hover:text-[#0C8077] transition-colors">SaaS Analytics Dashboard</h3>
-                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
-                                We engineered a high-performance, real-time analytics platform capable of processing massive datasets. The React frontend provides zero-latency interactive dashboards and complex data visualization for business intelligence.
-                            </p>
-                            <ul class="space-y-3 mb-8">
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Sub-second query rendering</li>
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Secure, multi-tenant architecture</li>
-                            </ul>
-                        </div>
-
-                        <div class="lg:col-span-7 relative overflow-hidden rounded-3xl border border-[#E5E7EB] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] bg-[#F8FAFC] aspect-[16/10] flex items-center justify-center lg:order-2 order-1 hover-trigger">
-                            <div class="absolute inset-0 bg-gradient-to-tl from-[#0C8077]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            <div class="w-3/4 h-3/4 bg-white rounded-xl shadow-xl border border-[#E5E7EB] p-5 flex flex-col transform group-hover:scale-105 group-hover:rotate-1 transition-all duration-700 ease-out">
-                                <div class="grid grid-cols-3 gap-4 mb-4">
-                                    <div class="h-16 bg-[#F8FAFC] rounded-lg border border-[#E5E7EB] flex flex-col justify-center px-3"><div class="h-2 w-8 bg-[#E5E7EB] rounded mb-2"></div><div class="h-4 w-16 bg-[#0F172A] rounded"></div></div>
-                                    <div class="h-16 bg-[#F8FAFC] rounded-lg border border-[#E5E7EB] flex flex-col justify-center px-3"><div class="h-2 w-8 bg-[#E5E7EB] rounded mb-2"></div><div class="h-4 w-16 bg-primary rounded"></div></div>
-                                    <div class="h-16 bg-[#F8FAFC] rounded-lg border border-[#E5E7EB] flex flex-col justify-center px-3"><div class="h-2 w-8 bg-[#E5E7EB] rounded mb-2"></div><div class="h-4 w-16 bg-[#0F172A] rounded"></div></div>
-                                </div>
-                                <div class="flex-grow bg-[#F8FAFC] border border-[#E5E7EB] rounded-lg relative overflow-hidden flex items-end p-4">
-                                    <div class="w-full h-full flex items-end justify-between gap-2 opacity-60">
-                                        <div class="w-full bg-[#E5E7EB] rounded-t-sm" style="height: 30%"></div>
-                                        <div class="w-full bg-[#E5E7EB] rounded-t-sm" style="height: 50%"></div>
-                                        <div class="w-full bg-primary rounded-t-sm shadow-[0_0_10px_rgba(12,128,119,0.5)]" style="height: 90%"></div>
-                                        <div class="w-full bg-[#E5E7EB] rounded-t-sm" style="height: 40%"></div>
-                                        <div class="w-full bg-[#E5E7EB] rounded-t-sm" style="height: 70%"></div>
-                                        <div class="w-full bg-[#E5E7EB] rounded-t-sm" style="height: 60%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group" data-aos="fade-up" data-aos-delay="0">
-                    <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-                        <div class="lg:col-span-7 relative overflow-hidden rounded-3xl border border-[#E5E7EB] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] bg-[#F8FAFC] aspect-[16/10] flex items-center justify-center hover-trigger">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-[#0C8077]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             
-                            <div class="w-3/4 h-3/4 bg-white rounded-xl shadow-xl border border-[#E5E7EB] p-6 flex flex-col items-center justify-center transform group-hover:scale-105 group-hover:-rotate-1 transition-all duration-700 ease-out">
-                                <div class="relative w-full max-w-[200px] h-32 flex items-center justify-center">
-                                    <div class="absolute top-0 left-0 w-12 h-12 bg-[#F8FAFC] border border-[#E5E7EB] rounded-lg flex items-center justify-center text-[#0F172A] z-10 animate-bounce" style="animation-duration: 3s;"><i class="fa-brands fa-python"></i></div>
-                                    <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#F8FAFC] border border-[#E5E7EB] rounded-lg flex items-center justify-center text-[#0F172A] z-10 animate-bounce" style="animation-duration: 4s;"><i class="fa-brands fa-aws"></i></div>
-                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-primary/10 border border-primary/30 rounded-full flex items-center justify-center text-primary z-20 shadow-[0_0_15px_rgba(12,128,119,0.2)]">
-                                        <i class="fa-solid fa-gears text-xl animate-spin-slow"></i>
+                            <ul class="space-y-3 mb-8 border-b border-[#E5E7EB] pb-8">
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Sub-50ms data polling and UI rendering</li>
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Real-time WebSocket order book syncing</li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded bg-white border border-[#E5E7EB] text-xs font-mono text-[#0F172A] shadow-sm">React.js</span>
+                                <span class="px-3 py-1.5 rounded bg-white border border-[#E5E7EB] text-xs font-mono text-[#0F172A] shadow-sm">AWS WebSockets</span>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 order-1 lg:order-2">
+                            <div class="relative rounded-2xl bg-[#0F172A] border border-[#1E293B] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.2)] overflow-hidden hover-trigger transform group-hover:-translate-y-2 transition-transform duration-500">
+                                <div class="bg-[#020617] border-b border-[#1E293B] px-4 py-3 flex items-center gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-[#ef4444]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#f59e0b]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#22c55e]"></div>
+                                    <div class="ml-4 bg-[#0F172A] border border-[#1E293B] rounded px-3 py-1 text-[10px] text-[#94A3B8] font-mono flex-grow max-w-xs flex items-center gap-2">
+                                        <i class="fa-solid fa-lock text-green-400"></i> terminal.fintech-client.net
                                     </div>
-                                    <svg class="absolute inset-0 w-full h-full -z-1" viewBox="0 0 200 128">
-                                        <path d="M 24 24 L 100 64 L 176 104" fill="none" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4" />
-                                    </svg>
+                                </div>
+                                
+                                <div class="relative aspect-[16/10] bg-[#020617] p-4 flex flex-col gap-3 font-mono text-[8px] sm:text-[10px] text-[#94A3B8] transform group-hover:scale-105 transition-transform duration-700 ease-out select-none">
+                                    <div class="flex justify-between items-center border-b border-[#1E293B] pb-2">
+                                        <div class="flex gap-4">
+                                            <span class="font-bold text-white">BTC/USD <span class="text-green-400">+2.41%</span></span>
+                                            <span class="font-bold text-white">ETH/USD <span class="text-red-400">-0.84%</span></span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> WSS CONNECTED <span class="text-[#0C8077]">12ms</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow grid grid-cols-3 gap-4">
+                                        <div class="col-span-1 bg-[#0F172A] border border-[#1E293B] rounded p-2 flex flex-col">
+                                            <div class="text-[#64748B] border-b border-[#1E293B] pb-1 mb-2">ORDER BOOK (L2)</div>
+                                            <div class="flex-grow flex flex-col justify-between">
+                                                <div class="space-y-1">
+                                                    <div class="flex justify-between text-red-400 relative z-10"><span class="bg-red-500/10 absolute right-0 top-0 bottom-0 w-[40%] -z-10"></span><span>45,232.00</span><span>1.42</span></div>
+                                                    <div class="flex justify-between text-red-400 relative z-10"><span class="bg-red-500/10 absolute right-0 top-0 bottom-0 w-[70%] -z-10"></span><span>45,231.50</span><span>3.10</span></div>
+                                                    <div class="flex justify-between text-red-400 relative z-10"><span class="bg-red-500/10 absolute right-0 top-0 bottom-0 w-[20%] -z-10"></span><span>45,231.00</span><span>0.85</span></div>
+                                                </div>
+                                                <div class="py-2 text-center text-white border-y border-[#1E293B] my-1 font-bold">45,230.50 USD</div>
+                                                <div class="space-y-1">
+                                                    <div class="flex justify-between text-green-400 relative z-10"><span class="bg-green-500/10 absolute right-0 top-0 bottom-0 w-[80%] -z-10"></span><span>45,230.00</span><span>4.20</span></div>
+                                                    <div class="flex justify-between text-green-400 relative z-10"><span class="bg-green-500/10 absolute right-0 top-0 bottom-0 w-[30%] -z-10"></span><span>45,229.50</span><span>1.15</span></div>
+                                                    <div class="flex justify-between text-green-400 relative z-10"><span class="bg-green-500/10 absolute right-0 top-0 bottom-0 w-[50%] -z-10"></span><span>45,229.00</span><span>2.60</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-span-2 flex flex-col gap-4">
+                                            <div class="flex-grow bg-[#0F172A] border border-[#1E293B] rounded p-3 flex items-end justify-between gap-1">
+                                                <div class="w-full h-[40%] bg-green-500/20 border-y border-green-500 relative"><div class="absolute -top-3 -bottom-2 left-1/2 w-[1px] bg-green-500"></div></div>
+                                                <div class="w-full h-[60%] bg-red-500/20 border-y border-red-500 relative"><div class="absolute -top-4 -bottom-1 left-1/2 w-[1px] bg-red-500"></div></div>
+                                                <div class="w-full h-[50%] bg-red-500/20 border-y border-red-500 relative"><div class="absolute -top-2 -bottom-5 left-1/2 w-[1px] bg-red-500"></div></div>
+                                                <div class="w-full h-[80%] bg-green-500/20 border-y border-green-500 relative shadow-[0_0_10px_rgba(34,197,94,0.3)]"><div class="absolute -top-6 -bottom-3 left-1/2 w-[1px] bg-green-500"></div></div>
+                                                <div class="w-full h-[70%] bg-green-500/20 border-y border-green-500 relative"><div class="absolute -top-2 -bottom-2 left-1/2 w-[1px] bg-green-500"></div></div>
+                                            </div>
+                                            <div class="h-12 flex gap-4">
+                                                <div class="w-1/2 bg-[#0C8077]/10 border border-[#0C8077]/30 text-[#0C8077] rounded flex items-center justify-center font-bold">EXECUTE LONG</div>
+                                                <div class="w-1/2 bg-red-500/10 border border-red-500/30 text-red-400 rounded flex items-center justify-center font-bold">EXECUTE SHORT</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+                <div class="group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         
-                        <div class="lg:col-span-5 flex flex-col justify-center">
-                            <div class="mb-6 flex flex-wrap gap-2">
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">AWS</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">Docker</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">CI/CD</span>
-                                <span class="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0F172A] tracking-wide">Automation Scripts</span>
+                        <div class="lg:col-span-7">
+                            <div class="relative rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] overflow-hidden hover-trigger transform group-hover:-translate-y-2 transition-transform duration-500">
+                                <div class="bg-[#F8FAFC] border-b border-[#E5E7EB] px-4 py-3 flex items-center gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-[#ef4444]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#f59e0b]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#22c55e]"></div>
+                                    <div class="ml-4 bg-white border border-[#E5E7EB] rounded px-3 py-1 text-[10px] text-[#64748B] font-mono flex-grow max-w-xs flex items-center gap-2">
+                                        <i class="fa-solid fa-lock text-[#0C8077]"></i> admin.autotech.net/inventory
+                                    </div>
+                                </div>
+                                
+                                <div class="relative aspect-[16/10] bg-[#F8FAFC] flex transform group-hover:scale-105 transition-transform duration-700 ease-out select-none font-sans text-[8px] sm:text-[10px]">
+                                    <div class="w-[25%] bg-white border-r border-[#E5E7EB] p-3 flex flex-col gap-2">
+                                        <div class="font-bold text-[#0F172A] mb-2 text-[10px] sm:text-xs"><i class="fa-solid fa-car text-[#0C8077] mr-1"></i> AutoSync Hub</div>
+                                        <div class="bg-[#F8FAFC] text-[#0C8077] font-bold p-1.5 rounded border border-[#E5E7EB]">Inventory</div>
+                                        <div class="text-[#64748B] p-1.5 hover:bg-[#F8FAFC] rounded">Logistics</div>
+                                        <div class="text-[#64748B] p-1.5 hover:bg-[#F8FAFC] rounded">Analytics</div>
+                                    </div>
+                                    <div class="flex-grow p-4 flex flex-col gap-3">
+                                        <div class="flex justify-between items-center">
+                                            <div class="bg-white border border-[#E5E7EB] rounded px-2 py-1.5 text-[#94A3B8] w-[60%] flex items-center gap-2"><i class="fa-solid fa-magnifying-glass"></i> Search models, VINs...</div>
+                                            <div class="bg-[#0F172A] text-white px-3 py-1.5 rounded font-bold shadow">Export CSV</div>
+                                        </div>
+                                        <div class="bg-white border border-[#E5E7EB] rounded flex-grow p-3 flex flex-col">
+                                            <div class="grid grid-cols-4 font-bold text-[#64748B] border-b border-[#E5E7EB] pb-2 mb-2">
+                                                <div class="col-span-2">VEHICLE MODEL</div><div>VIN</div><div>STATUS</div>
+                                            </div>
+                                            <div class="flex-grow flex flex-col gap-2">
+                                                <div class="grid grid-cols-4 items-center border-b border-[#F8FAFC] pb-1">
+                                                    <div class="col-span-2 font-bold text-[#0F172A]">Triumph Scrambler 400</div>
+                                                    <div class="font-mono text-[#64748B]">TR-400X-A1</div>
+                                                    <div><span class="bg-green-100 text-green-700 px-1.5 py-0.5 rounded text-[7px] sm:text-[9px] font-bold">IN STOCK</span></div>
+                                                </div>
+                                                <div class="grid grid-cols-4 items-center border-b border-[#F8FAFC] pb-1">
+                                                    <div class="col-span-2 font-bold text-[#0F172A]">Honda CR-V Hybrid</div>
+                                                    <div class="font-mono text-[#64748B]">HN-99212-B</div>
+                                                    <div><span class="bg-yellow-100 text-yellow-700 px-1.5 py-0.5 rounded text-[7px] sm:text-[9px] font-bold">TRANSIT</span></div>
+                                                </div>
+                                                <div class="grid grid-cols-4 items-center border-b border-[#F8FAFC] pb-1">
+                                                    <div class="col-span-2 font-bold text-[#0F172A]">BMW M340i xDrive</div>
+                                                    <div class="font-mono text-[#64748B]">BM-10293-Z</div>
+                                                    <div><span class="bg-green-100 text-green-700 px-1.5 py-0.5 rounded text-[7px] sm:text-[9px] font-bold">IN STOCK</span></div>
+                                                </div>
+                                                <div class="grid grid-cols-4 items-center">
+                                                    <div class="col-span-2 font-bold text-[#0F172A]">Audi Q5 Premium</div>
+                                                    <div class="font-mono text-[#64748B]">AU-88311-C</div>
+                                                    <div><span class="bg-red-100 text-red-700 px-1.5 py-0.5 rounded text-[7px] sm:text-[9px] font-bold">SOLD</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight group-hover:text-[#0C8077] transition-colors">Cloud Infrastructure & Workflow Automation</h3>
+                        </div>
+
+                        <div class="lg:col-span-5">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">Automotive Industry</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Global Inventory Sync Platform</h3>
                             <p class="text-[#64748B] text-lg leading-relaxed mb-8">
-                                We designed a scalable cloud architecture combined with a custom Python automation system. This eliminated repetitive operational tasks, streamlined team productivity, and introduced automated deployments with robust monitoring.
+                                A major dealership network struggled with inventory synchronization across 14 locations. We engineered a centralized web application paired with an Elasticsearch database, allowing real-time search querying of thousands of vehicles instantly.
                             </p>
-                            <ul class="space-y-3 mb-8">
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Zero-downtime CI/CD deployment pipelines</li>
-                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> 40+ hours of manual team labor saved weekly</li>
+                            
+                            <ul class="space-y-3 mb-8 border-b border-[#E5E7EB] pb-8">
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Headless CMS architecture for omnichannel deployment</li>
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Instant Elasticsearch filtering</li>
                             </ul>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Next.js</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Elasticsearch</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                        
+                        <div class="lg:col-span-5 order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">Health & Wellness</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Automated NLP Triage Portal</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A telehealth clinic needed a secure system to route patient requests. We deployed a HIPAA-compliant web portal integrated with a custom NLP model, automatically parsing symptom descriptions and assigning medical priority.
+                            </p>
+                            
+                            <ul class="space-y-3 mb-8 border-b border-[#E5E7EB] pb-8">
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> Fully encrypted VPC cloud architecture</li>
+                                <li class="flex items-start text-sm font-medium text-[#0F172A]"><i class="fa-solid fa-check text-[#0C8077] mt-1 mr-3"></i> 94% accuracy in automated symptom routing</li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">Python NLP</span>
+                                <span class="px-3 py-1.5 rounded bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-mono text-[#0F172A]">AWS VPC</span>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 order-1 lg:order-2">
+                            <div class="relative rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] overflow-hidden hover-trigger transform group-hover:-translate-y-2 transition-transform duration-500">
+                                <div class="bg-[#F8FAFC] border-b border-[#E5E7EB] px-4 py-3 flex items-center gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-[#ef4444]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#f59e0b]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#22c55e]"></div>
+                                    <div class="ml-4 bg-white border border-[#E5E7EB] rounded px-3 py-1 text-[10px] text-[#64748B] font-mono flex-grow max-w-xs flex items-center gap-2">
+                                        <i class="fa-solid fa-lock text-green-500"></i> triage.health-secure.org
+                                    </div>
+                                </div>
+                                
+                                <div class="relative aspect-[16/10] bg-[#F0FDF4]/30 p-4 flex gap-4 transform group-hover:scale-105 transition-transform duration-700 ease-out select-none font-sans text-[8px] sm:text-[10px]">
+                                    <div class="w-1/3 flex flex-col gap-3">
+                                        <div class="font-bold text-[#0F172A] border-b border-[#E5E7EB] pb-2">Active Queue</div>
+                                        <div class="bg-white border-l-2 border-red-500 shadow-sm p-2.5 rounded border-y border-r border-[#E5E7EB]">
+                                            <div class="flex justify-between mb-1.5"><span class="font-bold text-red-600 text-[7px] sm:text-[9px]">URGENT</span><span class="text-[#94A3B8]">2m ago</span></div>
+                                            <div class="text-[#0F172A] font-medium leading-tight">"Severe chest pain and radiating numbness..."</div>
+                                        </div>
+                                        <div class="bg-[#F8FAFC] border-l-2 border-blue-500 p-2.5 rounded border-y border-r border-[#E5E7EB] opacity-60">
+                                            <div class="flex justify-between mb-1.5"><span class="font-bold text-blue-600 text-[7px] sm:text-[9px]">ROUTINE</span><span class="text-[#94A3B8]">14m ago</span></div>
+                                            <div class="text-[#0F172A] font-medium leading-tight">"Need to refill my statin prescription..."</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="w-2/3 bg-white border border-[#E5E7EB] rounded shadow-sm flex flex-col">
+                                        <div class="border-b border-[#E5E7EB] p-3 flex justify-between items-center bg-[#F8FAFC] rounded-t">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 text-xs"><i class="fa-solid fa-user"></i></div>
+                                                <div><div class="font-bold text-[#0F172A] text-xs">Patient #8829</div><div class="text-[#0C8077] font-bold">NLP Triage Active</div></div>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 flex-grow flex flex-col justify-center gap-4">
+                                            <div>
+                                                <div class="flex justify-between text-[#64748B] font-bold mb-1">
+                                                    <span>CONFIDENCE SCORE</span> <span class="text-[#0C8077]">94.2%</span>
+                                                </div>
+                                                <div class="w-full bg-[#F8FAFC] h-2 rounded-full border border-[#E5E7EB] overflow-hidden"><div class="bg-[#0C8077] w-[94%] h-full rounded-full"></div></div>
+                                            </div>
+                                            <div class="bg-[#F8FAFC] p-3 rounded border border-[#E5E7EB]">
+                                                <span class="text-[#64748B] block mb-2 font-bold">MODEL EXTRACTION:</span>
+                                                <div class="flex gap-2">
+                                                    <span class="bg-red-100 text-red-700 px-2 py-1 rounded border border-red-200">chest pain</span>
+                                                    <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded border border-orange-200">radiating</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-auto flex justify-end gap-2">
+                                                <div class="bg-white border border-[#E5E7EB] text-[#0F172A] px-3 py-1.5 rounded font-bold shadow-sm">Review</div>
+                                                <div class="bg-red-500 text-white px-3 py-1.5 rounded font-bold shadow-sm">Auto-Route to Cardiology</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 bg-white relative overflow-hidden border-y border-[#E5E7EB]">
+        
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="corporate-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0F172A" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#corporate-grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0C8077] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-building-shield"></i> Who We Are
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0F172A] mb-8 tracking-tight leading-[1.1]">
+                        Engineering the <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0C8077] to-teal-500">infrastructure of tomorrow.</span>
+                    </h2>
+
+                    <div class="space-y-6 text-lg text-[#64748B] leading-relaxed">
+                        <p>
+                            VishX Innovations is a premier technology and engineering firm. We partner with visionaries, product teams, and enterprise leaders to architect digital systems that drive measurable business growth.
+                        </p>
+                        <p>
+                            We reject the traditional "agency" model of churn-and-burn templates. Instead, we operate as your dedicated technical partner. From designing fault-tolerant cloud environments to integrating predictive AI models, our engineering team builds solutions rooted in precision, security, and absolute scalability.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 grid grid-cols-2 gap-8 border-t border-[#E5E7EB] pt-8">
+                        <div>
+                            <p class="text-4xl font-black text-[#0F172A]">100%</p>
+                            <p class="text-sm font-bold text-[#0C8077] mt-2 uppercase tracking-wide">In-House Engineering</p>
+                            <p class="text-sm text-[#64748B] mt-1">No outsourced development.</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-black text-[#0F172A]">Tier 1</p>
+                            <p class="text-sm font-bold text-[#0C8077] mt-2 uppercase tracking-wide">Enterprise Standards</p>
+                            <p class="text-sm text-[#64748B] mt-1">Built for security and scale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="absolute -inset-4 bg-[#F8FAFC] rounded-3xl transform rotate-3 -z-10 border border-[#E5E7EB]"></div>
+                    
+                    <div class="grid gap-6">
+                        <div class="bg-white border border-[#E5E7EB] p-8 rounded-2xl hover:shadow-[0_20px_40px_-15px_rgba(12,128,119,0.15)] hover:border-[#0C8077]/30 transition-all duration-300 group hover-trigger">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 rounded-xl bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center text-[#0C8077] group-hover:bg-[#0C8077] group-hover:text-white transition-colors duration-300 shadow-sm">
+                                    <i class="fa-solid fa-compass-drafting text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0F172A]">Architectural Integrity</h3>
+                            </div>
+                            <p class="text-[#64748B] leading-relaxed">We map out the entire technical blueprint before writing a single line of code, ensuring systems don't collapse under the weight of future scaling.</p>
+                        </div>
+
+                        <div class="bg-white border border-[#E5E7EB] p-8 rounded-2xl hover:shadow-[0_20px_40px_-15px_rgba(12,128,119,0.15)] hover:border-[#0C8077]/30 transition-all duration-300 group hover-trigger lg:ml-12 relative z-10">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 rounded-xl bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center text-[#0C8077] group-hover:bg-[#0C8077] group-hover:text-white transition-colors duration-300 shadow-sm">
+                                    <i class="fa-solid fa-microchip text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0F172A]">Future-Proof Stacks</h3>
+                            </div>
+                            <p class="text-[#64748B] leading-relaxed">We leverage modern, highly-supported frameworks like React, Python, and AWS to ensure your infrastructure remains agile and maintainable for decades.</p>
+                        </div>
+
+                        <div class="bg-white border border-[#E5E7EB] p-8 rounded-2xl hover:shadow-[0_20px_40px_-15px_rgba(12,128,119,0.15)] hover:border-[#0C8077]/30 transition-all duration-300 group hover-trigger">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 rounded-xl bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center text-[#0C8077] group-hover:bg-[#0C8077] group-hover:text-white transition-colors duration-300 shadow-sm">
+                                    <i class="fa-solid fa-handshake-angle text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#0F172A]">Long-Term Partnership</h3>
+                            </div>
+                            <p class="text-[#64748B] leading-relaxed">We don't disappear after deployment. We provide ongoing technical consulting, proactive maintenance, and iterative optimization as your business evolves.</p>
                         </div>
                     </div>
                 </div>
