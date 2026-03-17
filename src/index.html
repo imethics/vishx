@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VishX Innovations provides high-performance web architecture, cloud systems, and AI solutions for enterprise scale.">
+    <title>VishX Innovations | High-Performance Tech Solutions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="font-sans text-secondary bg-white selection:bg-primary selection:text-white antialiased overflow-x-hidden">
+
+    <div class="cursor-dot hidden md:block" id="cursor-dot"></div>
+    <div class="cursor-ring hidden md:block" id="cursor-ring"></div>
+
+    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex-shrink-0 flex items-center hover-trigger" aria-label="VishX Innovations Home">
+                    <span class="text-2xl font-bold text-white tracking-tight">VishX <span class="text-primary">Innovations</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="text-white/70 hover:text-primary font-medium text-sm transition-colors hover-trigger">Services</a>
+                    <a href="#testimonials" class="text-white/70 hover:text-primary font-medium text-sm transition-colors hover-trigger">Testimonials</a>
+                    <a href="#contact" class="text-white/70 hover:text-primary font-medium text-sm transition-colors hover-trigger">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#contact" class="hidden md:inline-flex bg-primary hover:bg-primaryHover text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5 hover-trigger">
+                        Start a Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#050505] text-white min-h-[90vh] flex items-center perspective-1000">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-primary/20 blur-[150px] rounded-full mix-blend-screen"></div>
+            <div class="absolute top-[40%] -right-[10%] w-[40%] h-[60%] bg-teal-600/10 blur-[150px] rounded-full mix-blend-screen"></div>
+            <div class="bg-noise absolute inset-0 opacity-[0.03]"></div>
+        </div>
+
+        <div id="spotlight" class="absolute inset-0 pointer-events-none z-[1] opacity-0 transition-opacity duration-300"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+                
+                <div class="text-left relative z-20" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 mb-6 backdrop-blur-sm shadow-[0_0_15px_rgba(12,128,119,0.2)]">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Enterprise-Grade Engineering
+                    </div>
+                    
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6">
+                        Architecting <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-teal-400 to-emerald-300 relative inline-block">
+                            Digital Dominance.
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-primary/40" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-white/60 mb-10 font-medium leading-relaxed max-w-lg">
+                        We don't just write code. We deploy scalable cloud infrastructure, integrate predictive AI, and build high-converting web platforms.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-5 mb-12">
+                        <a href="#contact" class="hover-trigger bg-white text-[#050505] px-8 py-4 rounded-xl font-bold text-base transition-all hover:bg-gray-100 hover:scale-105 text-center flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                            Initialize Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="hover-trigger bg-transparent text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-base transition-all hover:bg-white/5 hover:border-white/40 backdrop-blur-sm text-center">
+                            Explore Stack
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative h-[500px] w-full hidden lg:block perspective-[2000px] z-10" data-aos="fade-left" data-aos-duration="1200">
+                    <div id="isometric-cluster" class="absolute inset-0 w-full h-full transform-style-3d transition-transform duration-200 ease-out" style="transform: rotateX(15deg) rotateY(-25deg);">
+                        
+                        <div class="absolute top-[20%] left-[25%] w-[320px] h-[220px] bg-[#0A0A0A]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 transform translate-z-[-100px] shadow-2xl flex flex-col justify-between">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-mono text-white/40 uppercase tracking-widest"><i class="fa-solid fa-server mr-2"></i> Infrastructure</span>
+                                <span class="flex items-center gap-2 text-xs font-mono text-green-400"><span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> 99.9% Uptime</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="h-2 w-3/4 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-primary/40 w-[85%]"></div></div>
+                                <div class="h-2 w-1/2 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-primary/40 w-[60%]"></div></div>
+                                <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-primary/40 w-[92%]"></div></div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-1 rounded bg-white/5 text-[10px] text-white/50 border border-white/5">AWS</span>
+                                <span class="px-2 py-1 rounded bg-white/5 text-[10px] text-white/50 border border-white/5">Docker</span>
+                                <span class="px-2 py-1 rounded bg-white/5 text-[10px] text-white/50 border border-white/5">PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-[10%] left-[10%] w-[340px] h-[240px] bg-[#0A0A0A]/90 backdrop-blur-xl border border-primary/20 rounded-2xl p-6 transform translate-z-[0px] shadow-[0_0_30px_rgba(12,128,119,0.15)] flex flex-col justify-between">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-mono text-primary uppercase tracking-widest"><i class="fa-solid fa-brain mr-2"></i> AI Core Engine</span>
+                                <i class="fa-brands fa-python text-white/20 text-xl"></i>
+                            </div>
+                            <div class="relative w-full h-24 flex items-center justify-center">
+                                <svg class="w-full h-full opacity-40" viewBox="0 0 100 40">
+                                    <path d="M10 20 L40 10 L70 30 L90 20" fill="none" stroke="#0C8077" stroke-width="1.5" stroke-dasharray="4 2" class="animate-pulse" />
+                                    <circle cx="10" cy="20" r="3" fill="#0C8077" />
+                                    <circle cx="40" cy="10" r="3" fill="#0C8077" />
+                                    <circle cx="70" cy="30" r="3" fill="#0C8077" />
+                                    <circle cx="90" cy="20" r="3" fill="#0C8077" />
+                                </svg>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-1 rounded bg-primary/10 text-[10px] text-primary border border-primary/20">Machine Learning</span>
+                                <span class="px-2 py-1 rounded bg-primary/10 text-[10px] text-primary border border-primary/20">Automation APIs</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-[5%] -left-[5%] w-[380px] h-[280px] bg-white/[0.03] backdrop-blur-2xl border border-white/30 rounded-2xl p-6 transform translate-z-[100px] shadow-2xl flex flex-col hover-trigger group">
+                            <div class="flex gap-2 mb-6">
+                                <div class="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                            </div>
+                            
+                            <div class="flex-grow flex flex-col gap-4">
+                                <div class="flex gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary to-teal-400 p-[1px]">
+                                        <div class="w-full h-full bg-[#0A0A0A] rounded-xl flex items-center justify-center"><i class="fa-brands fa-react text-primary text-xl animate-spin-slow"></i></div>
+                                    </div>
+                                    <div class="flex flex-col justify-center gap-2 flex-grow">
+                                        <div class="h-3 w-32 bg-white/80 rounded"></div>
+                                        <div class="h-2 w-24 bg-white/30 rounded"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-cols-2 gap-3 mt-4">
+                                    <div class="h-20 rounded-xl border border-white/10 bg-white/5 flex items-end p-3 relative overflow-hidden">
+                                        <div class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+                                        <div class="h-10 w-full bg-primary/20 rounded-t-sm border-t border-primary/50 relative"></div>
+                                    </div>
+                                    <div class="h-20 rounded-xl border border-white/10 bg-white/5 p-3 flex flex-col gap-2">
+                                        <div class="h-2 w-full bg-white/10 rounded"></div>
+                                        <div class="h-2 w-3/4 bg-white/10 rounded"></div>
+                                        <div class="h-2 w-1/2 bg-white/10 rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-50">
+            <span class="text-[10px] uppercase tracking-[0.2em] mb-2 font-mono">Scroll</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 bg-[#050505] relative overflow-visible border-t border-white/5">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none opacity-50"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:flex lg:items-start lg:gap-16">
+                
+                <div class="lg:w-1/3 lg:sticky lg:top-32 mb-16 lg:mb-0" data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-primary mb-6 backdrop-blur-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                        Capabilities
+                    </div>
+                    <h2 class="text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+                        Engineered <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-600">for Scale.</span>
+                    </h2>
+                    <p class="text-lg text-white/50 leading-relaxed mb-8">
+                        We don't just write code. We architect end-to-end technology systems designed to handle growth, automate friction, and dominate your market.
+                    </p>
+                    <a href="#contact" class="hidden lg:inline-flex items-center gap-2 text-white font-bold pb-1 border-b border-primary hover:text-primary transition-colors hover-trigger">
+                        Discuss your architecture <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="lg:w-2/3 flex flex-col gap-6 lg:gap-8 pb-32" id="cards-container">
+                    
+                    <div class="service-card sticky top-[12vh] bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl transition-all duration-500 overflow-hidden group hover-trigger">
+                        <div class="card-glow absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(12, 128, 119, 0.1), transparent 40%);"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fa-solid fa-code text-2xl"></i>
+                                </div>
+                                <span class="text-6xl font-black text-white/5 group-hover:text-white/10 transition-colors duration-500 pointer-events-none">01</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">Web & Application Development</h3>
+                            <p class="text-white/60 mb-8 leading-relaxed text-lg max-w-xl">High-performance web platforms and applications tailored to your business logic. We focus on modern frameworks, zero-layout-shift frontends, and rock-solid backend architecture.</p>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Custom Applications</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">SaaS & MVP</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card sticky top-[15vh] bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl transition-all duration-500 overflow-hidden group hover-trigger">
+                        <div class="card-glow absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(12, 128, 119, 0.1), transparent 40%);"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fa-solid fa-network-wired text-2xl"></i>
+                                </div>
+                                <span class="text-6xl font-black text-white/5 group-hover:text-white/10 transition-colors duration-500 pointer-events-none">02</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">AI & Machine Learning</h3>
+                            <p class="text-white/60 mb-8 leading-relaxed text-lg max-w-xl">Embed intelligence into your workflows. From predictive modeling to custom LLM integrations, we build systems that learn, adapt, and scale operational efficiency.</p>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Model Fine-tuning</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Workflow Automation</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">NLP Integrations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card sticky top-[18vh] bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl transition-all duration-500 overflow-hidden group hover-trigger">
+                        <div class="card-glow absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(12, 128, 119, 0.1), transparent 40%);"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fa-solid fa-server text-2xl"></i>
+                                </div>
+                                <span class="text-6xl font-black text-white/5 group-hover:text-white/10 transition-colors duration-500 pointer-events-none">03</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">Cloud & DevOps</h3>
+                            <p class="text-white/60 mb-8 leading-relaxed text-lg max-w-xl">Zero-downtime deployments and infinitely scalable infrastructure. We architect your cloud environments on AWS, Azure, or GCP to ensure maximum uptime and security.</p>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">CI/CD Pipelines</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Docker Containerization</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Infrastructure Setup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card sticky top-[21vh] bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl transition-all duration-500 overflow-hidden group hover-trigger">
+                        <div class="card-glow absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none" style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(12, 128, 119, 0.1), transparent 40%);"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fa-solid fa-database text-2xl"></i>
+                                </div>
+                                <span class="text-6xl font-black text-white/5 group-hover:text-white/10 transition-colors duration-500 pointer-events-none">04</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">Database & Architecture</h3>
+                            <p class="text-white/60 mb-8 leading-relaxed text-lg max-w-xl">Strategic technology decisions require the right blueprint. We design robust database schemas and full system architectures to prevent technical debt from day one.</p>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Schema Design</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">Query Optimization</span>
+                                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-white/80 font-medium">IT Consulting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark relative overflow-hidden text-white bg-fixed" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%230c8077\' fill-opacity=\'0.1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+                <div data-aos="zoom-in" data-aos-delay="0">
+                    <div class="text-5xl font-extrabold mb-2 text-primary">50+</div>
+                    <div class="text-white/70 font-medium text-sm uppercase tracking-widest">Projects</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-5xl font-extrabold mb-2 text-primary">98%</div>
+                    <div class="text-white/70 font-medium text-sm uppercase tracking-widest">Satisfaction</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-5xl font-extrabold mb-2 text-primary">25+</div>
+                    <div class="text-white/70 font-medium text-sm uppercase tracking-widest">Tech Stack</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-5xl font-extrabold mb-2 text-primary">10+</div>
+                    <div class="text-white/70 font-medium text-sm uppercase tracking-widest">Years Exp</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-case-studies" class="py-32 bg-[#F8FAFC] relative overflow-hidden border-y border-[#E5E7EB]">
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.04]">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="blueprint-grid-1" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                        <path d="M 0 40 L 40 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blueprint-grid-1)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-20 md:flex md:justify-between md:items-end" data-aos="fade-up">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E7EB] text-xs font-bold text-[#0F172A] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-server text-[#0C8077]"></i> Case Studies
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-6">
+                        Architected for <span class="text-[#0C8077]">Scale.</span>
+                    </h2>
+                    <p class="text-lg text-[#64748B] leading-relaxed">
+                        Real engineering solves complex business bottlenecks. Explore how we have architected secure, high-performance infrastructure across heavily regulated and data-intensive industries.
+                    </p>
+                </div>
+                <div class="hidden md:block pb-2">
+                    <a href="#contact" class="text-[#0C8077] font-bold hover:text-[#09665f] transition-colors flex items-center gap-2 group">
+                        Discuss your architecture <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="space-y-12">
+                <div class="bg-white border border-[#E5E7EB] rounded-3xl p-8 lg:p-12 shadow-sm hover:shadow-xl transition-shadow duration-500 group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">FinTech Sector</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">High-Volume Transaction Processing Engine</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A financial services client was experiencing severe database locking and latency issues during end-of-day reconciliation. We completely re-architected their backend, transitioning them from a monolithic structure to a decoupled microservices architecture utilizing AWS SQS and advanced PostgreSQL indexing.
+                            </p>
+                            
+                            <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-[#E5E7EB]">
+                                <div>
+                                    <p class="text-3xl font-black text-[#0F172A]">84%</p>
+                                    <p class="text-xs text-[#64748B] uppercase tracking-wide font-bold mt-1">Reduction in Latency</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-black text-[#0F172A]">Zero</p>
+                                    <p class="text-xs text-[#64748B] uppercase tracking-wide font-bold mt-1">Data Packet Loss</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-1 lg:order-2 bg-[#0F172A] rounded-2xl p-6 relative overflow-hidden h-full min-h-[350px] flex items-center justify-center border border-[#1E293B]">
+                             <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+                             <div class="relative z-10 w-full max-w-sm">
+                                <div class="flex justify-between items-center mb-12 relative">
+                                    <div class="w-16 h-16 rounded-xl bg-[#1E293B] border border-[#334155] flex flex-col items-center justify-center text-white z-10">
+                                        <i class="fa-solid fa-mobile-screen text-xl mb-1"></i>
+                                        <span class="text-[8px] font-mono text-[#94A3B8]">CLIENT</span>
+                                    </div>
+                                    <div class="w-16 h-16 rounded-xl bg-[#0C8077]/20 border border-[#0C8077] flex flex-col items-center justify-center text-[#0C8077] z-10 shadow-[0_0_15px_rgba(12,128,119,0.3)]">
+                                        <i class="fa-solid fa-server text-xl mb-1"></i>
+                                        <span class="text-[8px] font-mono text-[#0C8077]">API GW</span>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="py-32 bg-[#F8FAFC] relative overflow-hidden border-y border-[#E5E7EB]">
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="blueprint-grid-2" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                        <path d="M 0 40 L 40 40" fill="none" stroke="#0C8077" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blueprint-grid-2)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-20 md:flex md:justify-between md:items-end" data-aos="fade-up">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E7EB] text-xs font-bold text-[#0F172A] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-desktop text-[#0C8077]"></i> Deployed Architecture
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-6">
+                        Architected for <span class="text-[#0C8077]">Scale.</span>
+                    </h2>
+                    <p class="text-lg text-[#64748B] leading-relaxed">
+                        Real engineering solves complex bottlenecks. Explore high-fidelity replicas of the actual interfaces and systems we have deployed for data-intensive industries.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="space-y-24">
+                <div class="group" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                        <div class="lg:col-span-5 order-2 lg:order-1">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="w-2 h-2 rounded-full bg-[#0C8077]"></span>
+                                <span class="text-sm font-bold text-[#64748B] uppercase tracking-widest">FinTech Sector</span>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Institutional Trading Terminal</h3>
+                            <p class="text-[#64748B] text-lg leading-relaxed mb-8">
+                                A financial services client required a zero-latency interface to monitor high-frequency trading data. We engineered a robust React frontend connected to an AWS SQS backend, rendering massive data arrays without a single dropped frame.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-company" class="py-32 bg-white relative overflow-hidden border-y border-[#E5E7EB]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] text-xs font-bold text-[#0C8077] mb-6 uppercase tracking-widest shadow-sm">
+                        <i class="fa-solid fa-building-shield"></i> Who We Are
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0F172A] mb-8 tracking-tight leading-[1.1]">
+                        Engineering the <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0C8077] to-teal-500">infrastructure of tomorrow.</span>
+                    </h2>
+                    <div class="space-y-6 text-lg text-[#64748B] leading-relaxed">
+                        <p>
+                            VishX Innovations is a premier technology and engineering firm. We partner with visionaries, product teams, and enterprise leaders to architect digital systems that drive measurable business growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dna" class="relative py-32 lg:py-48 bg-[#050505] overflow-hidden border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 relative perspective-1000" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="relative bg-[#0A0A0A]/90 backdrop-blur-2xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl transform rotate-y-[5deg] hover:rotate-y-0 transition-transform duration-700 hover-trigger">
+                        <div class="bg-white/5 border-b border-white/10 px-4 py-3 flex items-center justify-between">
+                            <span class="text-xs font-mono text-white/40 uppercase tracking-widest">vishx_core_engine.sh</span>
+                        </div>
+                        <div class="p-6 font-mono text-sm leading-relaxed text-white/70 h-[350px] overflow-y-auto custom-scrollbar">
+                            <div class="flex gap-3 mb-2">
+                                <span class="text-primary">root@vishx:~#</span>
+                                <span class="text-white">./execute_growth_protocol</span>
+                            </div>
+                            <div class="text-green-400 mb-4">[ OK ] Booting architectural sequences...</div>
+                            <div id="typewriter-target" class="text-teal-300"></div>
+                            <span class="animate-pulse inline-block w-2 h-4 bg-primary ml-1 align-middle mt-1"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 mb-6 backdrop-blur-sm">
+                        <i class="fa-solid fa-fingerprint text-primary"></i> Our DNA
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        We engineer with <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-400">military-grade precision.</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="relative h-[100vh] min-h-[650px] max-h-[900px] bg-[#F8FAFC] flex flex-col items-center justify-center overflow-hidden border-y border-[#E5E7EB]">
+        <div class="relative z-10 w-full max-w-7xl px-4 flex flex-col items-center h-full py-12 lg:py-16">
+            <div class="text-center shrink-0 mb-8" data-aos="fade-down">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">The <span class="text-[#0C8077]">Gold Standard.</span></h2>
+                <p class="text-[#64748B] text-sm md:text-base max-w-2xl mx-auto">Hear from the engineering leaders, founders, and directors who trust us to architect and scale their digital infrastructure.</p>
+            </div>
+
+            <div class="relative w-full flex-grow flex items-center justify-center perspective-1000">
+                <div id="testimonial-track" class="relative w-full max-w-3xl h-full flex items-center justify-center">
+                </div>
+            </div>
+
+            <div class="shrink-0 mt-8 flex items-center gap-6 z-20">
+                <button id="prev-btn" aria-label="Previous Testimonial" class="w-12 h-12 rounded-full bg-white border border-[#E5E7EB] flex items-center justify-center text-[#0F172A] hover:bg-[#0C8077] hover:border-[#0C8077] hover:text-white transition-all duration-300 shadow-sm group hover-trigger">
+                    <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                </button>
+                
+                <div class="flex gap-2" id="slider-dots"></div>
+
+                <button id="next-btn" aria-label="Next Testimonial" class="w-12 h-12 rounded-full bg-white border border-[#E5E7EB] flex items-center justify-center text-[#0F172A] hover:bg-[#0C8077] hover:border-[#0C8077] hover:text-white transition-all duration-300 shadow-sm group hover-trigger">
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-white relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-light to-white z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-5 gap-16 items-center">
+                <div class="lg:col-span-2" data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-dark mb-6">Let's Build Something <span class="text-primary">Incredible.</span></h2>
+                </div>
+
+                <div class="lg:col-span-3 bg-white p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-border relative overflow-hidden" data-aos="fade-left">
+                    <form class="space-y-6 relative z-10">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="group">
+                                <label for="fullName" class="block text-xs font-bold text-dark mb-2 uppercase tracking-wide">Full Name</label>
+                                <input id="fullName" type="text" class="w-full px-5 py-4 rounded-xl bg-light border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all hover-trigger" placeholder="John Doe">
+                            </div>
+                            <div class="group">
+                                <label for="email" class="block text-xs font-bold text-dark mb-2 uppercase tracking-wide">Work Email</label>
+                                <input id="email" type="email" class="w-full px-5 py-4 rounded-xl bg-light border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all hover-trigger" placeholder="john@company.com">
+                            </div>
+                        </div>
+                        
+                        <div class="group">
+                            <label for="serviceType" class="block text-xs font-bold text-dark mb-2 uppercase tracking-wide">Service Needed</label>
+                            <div class="relative">
+                                <select id="serviceType" class="w-full px-5 py-4 rounded-xl bg-light border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-dark appearance-none hover-trigger cursor-pointer">
+                                    <option>Web & Application Development</option>
+                                    <option>AI & Machine Learning Solutions</option>
+                                    <option>Cloud Infrastructure</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none text-secondary">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for="details" class="block text-xs font-bold text-dark mb-2 uppercase tracking-wide">Project Details</label>
+                            <textarea id="details" rows="4" class="w-full px-5 py-4 rounded-xl bg-light border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none hover-trigger" placeholder="Briefly describe your goals..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-dark hover:bg-primary text-white font-bold py-5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-primary/30 flex items-center justify-center gap-3 hover-trigger group">
+                            Initialize Project <i class="fa-solid fa-rocket group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark border-t border-white/10 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-secondary border-t border-white/10 pt-8 mt-12">
+                <p>&copy; 2026 VishX Innovations. Engineered for Scale.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" aria-label="LinkedIn" class="hover:text-primary transition-colors hover-trigger"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                    <a href="#" aria-label="Twitter" class="hover:text-primary transition-colors hover-trigger"><i class="fa-brands fa-twitter text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            const cursorDot = document.getElementById('cursor-dot');
+            const cursorRing = document.getElementById('cursor-ring');
+            
+            let mouseX = -100, mouseY = -100;
+            let ringX = -100, ringY = -100;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            const renderCursor = () => {
+                ringX += (mouseX - ringX) * 0.15;
+                ringY += (mouseY - ringY) * 0.15;
+                
+                if (cursorDot && cursorRing) {
+                    cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+                    cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+                }
+                
+                requestAnimationFrame(renderCursor);
+            };
+            requestAnimationFrame(renderCursor);
+
+            const hoverElements = document.querySelectorAll('.hover-trigger, a, button, input, select, textarea');
+            hoverElements.forEach(el => {
+                el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+                el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+            });
+        }
+
+        const testimonialsData = [
+            { quote: "VishX Innovations helped us build a scalable web platform...", role: "Tech Founder", company: "Technology Startup", avatar: "TF", color: "from-[#0C8077] to-teal-400" },
+            { quote: "The automation system they developed significantly reduced manual work...", role: "Operations Manager", company: "E-commerce Company", avatar: "OM", color: "from-amber-400 to-orange-500" },
+        ];
+
+        const track = document.getElementById('testimonial-track');
+        const dotsContainer = document.getElementById('slider-dots');
+        let currentIndex = 0;
+
+        if (track && dotsContainer) {
+            testimonialsData.forEach((test, index) => {
+                const card = document.createElement('div');
+                card.className = `test-slide p-6 md:p-10 rounded-2xl group flex flex-col justify-between h-auto max-h-full`;
+                card.innerHTML = `
+                    <div class="relative z-10">
+                        <p class="text-[#0F172A] text-lg md:text-xl leading-relaxed font-semibold mb-8 tracking-tight">"${test.quote}"</p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-5 border-t border-[#E5E7EB] mt-auto">
+                        <div>
+                            <h4 class="text-[#0F172A] font-bold text-sm tracking-wide">${test.role}</h4>
+                            <p class="text-[#64748B] text-xs">${test.company}</p>
+                        </div>
+                    </div>
+                `;
+                track.appendChild(card);
+
+                const dot = document.createElement('button');
+                dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+                dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'bg-[#0C8077] w-6' : 'bg-[#E5E7EB] hover:bg-[#cbd5e1]'}`;
+                dot.onclick = () => goToSlide(index);
+                dotsContainer.appendChild(dot);
+            });
+
+            const slides = document.querySelectorAll('.test-slide');
+            const dots = dotsContainer.childNodes;
+
+            function updateSlider() {
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active', 'prev', 'next');
+                    let prevIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+                    let nextIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+
+                    if (index === currentIndex) slide.classList.add('active');
+                    else if (index === prevIndex) slide.classList.add('prev');
+                    else if (index === nextIndex) slide.classList.add('next');
+                });
+                dots.forEach((dot, index) => {
+                    dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-[#0C8077] w-6' : 'bg-[#E5E7EB] hover:bg-[#cbd5e1]'}`;
+                });
+            }
+
+            function goToSlide(index) { currentIndex = index; updateSlider(); }
+
+            document.getElementById('next-btn')?.addEventListener('click', () => {
+                currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+                updateSlider();
+            });
+
+            document.getElementById('prev-btn')?.addEventListener('click', () => {
+                currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+                updateSlider();
+            });
+
+            updateSlider();
+        }
+
+        const typeTarget = document.getElementById('typewriter-target');
+        if (typeTarget) {
+            const codeString = `{\n "status": "Operational",\n "focus": ["Web Architecture"]\n}`;
+            let i = 0, isTyping = false;
+
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !isTyping) {
+                    isTyping = true; typeWriter();
+                }
+            }, { threshold: 0.5 });
+            observer.observe(typeTarget);
+
+            function typeWriter() {
+                if (i < codeString.length) {
+                    let char = codeString.charAt(i);
+                    typeTarget.innerHTML += char === '\n' ? '<br>' : (char === ' ' ? '&nbsp;' : char);
+                    i++; setTimeout(typeWriter, Math.random() * 30 + 10);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
